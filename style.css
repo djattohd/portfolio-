@@ -327,3 +327,22 @@ h2 {
     }
 }
 
+
+/* Accessibilité : masquage visuel mais lisible par les lecteurs d'écran */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Focus visible pour liens et boutons */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid rgba(0, 229, 218, 0.45);
+  outline-offset: 3px;
+}
